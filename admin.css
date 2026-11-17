@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FCE7EF;
+}
+h1, h2 {
+    font-family: "Playfair Display", serif;
+
+}
+.dashboard-title {
+    text-align: center;
+    padding: 20px;
+}
+
+.dashboard-title h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+    color: #8B3655;
+}
+
+.dashboard-title p {
+    font-size: 16px;
+    color: #8B3655;
+}
+
+.adminImg{
+    background-image: url(./admin.avif);
+    background-repeat: no-repeat;
+    margin: auto;
+    border: none;  
+    background-size: cover;
+    background-position: center; 
+    height: 600px;   
+}
+
+#adminLogin h2{
+    padding: 20px 0px;
+}
+
+#adminLogin{
+    margin-left: 55%;
+    margin-top: 50px;
+    font-size: 1.3rem;
+    background: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 4px 10px rgb(179, 13, 41);
+}
+#adminLogin input{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 90%;
+    border: 1px solid pink;
+}
+#adminLogin button{
+    background: rgb(223, 89, 111);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    margin: 40px 85px;
+    border: none;
+    font-size: 1.1rem;
+}
+table{
+    border: 1px solid black;
+    text-align: center;
+    width: calc(100% - 40px);
+    margin: 30px 20px;
+    border-collapse: collapse;
+    background-color: #FFF9F6;
+
+}
+
+table th,td,tr{
+    border: 1px solid black;
+    width: 100px;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+thead {
+    background-color: #fcb3ce;
+}
+th {
+    color: #713049;
+}
+td{
+    text-align: center;
+    border: 1px solid black;
+    color: #49323B;
+}
+.images img{
+    width: 100px;
+    height: 100px;
+}
+.editBtn button{
+    width: 90px;
+    height: 40px;
+    background: rgb(252, 97, 120);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.editBtn button:hover{
+    transform: scale(1.1);
+    background: #c70e5b;
+    color: white;
+}
+.editBtn button:active{
+    background: #B83D5D;
+}
+.deleteBtn button{
+    width: 90px;
+    height: 40px;
+    background:  #A91D42;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.deleteBtn button:hover{
+    transform: scale(1.1);
+    background:  #a73755;
+    color: white;
+}
+.deleteBtn button:active{
+    background: pink;
+}
+
+/* addFlower Button */
+
+.addbutton {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 30px;
+}
+
+#addflower-Button {
+    padding: 12px 20px;
+    background-color:  #D94F70;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#addflower-Button:hover {
+    background-color: #B83D5D;
+}

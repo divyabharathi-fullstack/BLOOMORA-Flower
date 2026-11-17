@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"rel="stylesheet">
+</head>
+<body>
+    <div class="adminImg">
+        <h1 style="text-align: center; margin-left: 200px; padding: 10px; ">BLOOMORA</h1>
+        <form id="adminLogin">
+            <h2>Admin Login</h2>
+            <label>Email</label> <br>
+            <input type="email" id="adminEmail" placeholder="Email" required><br>
+            <label>Password</label><br>
+            <input type="password" id="adminPassword" placeholder="Enter password" required><br>
+            <button type="submit" >Login</button>
+        </form>
+    </div>
+    <div id="adminDashboard" style="display: none;">
+        <div class="dashboard-title">
+            <h1>BLOOMORA</h1>
+            <p>Flower Inventory</p>
+        </div>
+        <div class="addbutton">
+            <button id="addflower-Button"><i class="fa-solid fa-plus"></i>Add New Flower Collection</button>
+        </div>    
+
+        <table>       
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Image</th>
+                    <th>Flower Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Stock Status</th>
+                    <th>Action</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td class="images"><img src="image1.jpg"></td>
+                    <td class="Img-Name">Pastel Love Bouquet</td>
+                    <td>₹1,899</td>
+                    <td>12</td>
+                    <td>In Stock</td>
+                    <td class="editBtn"><button>Edit</button></td>
+                    <td class="deleteBtn"><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td class="images"><img src="image2.jpg"></td>
+                    <td class="Img-Name">Red Romance Bouquet</td>
+                    <td>₹1,499</td>
+                    <td>5</td>
+                    <td>Low Stock</td>
+                    <td class="editBtn"><button>Edit</button></td>
+                    <td class="deleteBtn"><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td class="images"><img src="image3.jpg"></td>
+                    <td class="Img-Name">Blue Garden Bliss</td>
+                    <td>₹2,199</td>
+                    <td>12</td>
+                    <td>In Stock</td>
+                    <td class="editBtn"><button>Edit</button></td>
+                    <td class="deleteBtn"><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td class="images"><img src="image4.jpg"></td>
+                    <td class="Img-Name">Eternal Red Roses</td>
+                    <td>₹2,999</td>
+                    <td>10</td>
+                    <td>In Stock</td>
+                    <td class="editBtn"><button>Edit</button></td>
+                    <td class="deleteBtn"><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td class="images"><img src="image5.jpg"></td>
+                    <td class="Img-Name">Sunshine Garden Bouquet</td>
+                    <td>₹1,699</td>
+                    <td>10</td>
+                    <td>In Stock</td>
+                    <td class="editBtn"><button>Edit</button></td>
+                    <td class="deleteBtn"><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td class="images"><img src="image6.jpg"></td>
+                    <td class="Img-Name">Midnight Rose Bouquet</td>
+                    <td>₹2,499</td>
+                    <td>5</td>
+                    <td>Low Stock</td>
+                    <td class="editBtn"><button>Edit</button></td>
+                    <td class="deleteBtn"><button>Delete</button></td>
+                </tr>                        
+            </tbody>
+        </table>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

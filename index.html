@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Flower</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"rel="stylesheet">
+</head>
+<body>
+    <!-- head section -->
+    <header>
+        <h1 style="color: #be185d;">BLOOMORA</h1>
+        <div class="nav">
+            <nav>
+                <a href="#section1">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#section4">Our Flower Collections</a>
+                <a href="#section5">Contact</a>
+                <a href="admin.html">Admin</a>
+                <a href="#" id="cart-open">Cart</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section1">
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+
+            <div class="cart-content">
+
+                <!-- <div class="cart-box">
+                    <img src="" class="cart-img">
+
+                    <div class="cart-detail">
+                        <h2 class="cart-product-title">name</h2>
+                        <span class="cart-price">100</span>
+
+                        <div class="cart-quantity">
+                            <button id="decrement">-</button>
+                            <span class="number">1</span>
+                            <button id="increment">+</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <i class="fa-regular fa-trash-can cart-remove"></i>
+
+            </div> -->
+        </div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">0</div>
+        </div>
+
+        <button class="btn-buy">Buy Now</button>
+        <i class="fa-solid fa-x " id="cartclose"></i>
+        
+    </section>
+
+    <!-- slogan section -->
+    <section class="hero">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="videos/bg1.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content" id="home">
+            <p class="subtitle">A LITTLE BLOOM, A LOT OF LOVE</p>
+            <h1>Let Your Moments Bloom.</h1>
+            <p class="description">Every flower tells a story, every bouquet carries an emotion. Discover beautiful blooms thoughtfully arranged to celebrate love, happiness, and life's most precious moments.</p>
+            <div class="hero-button">
+                <button><a href="#section4">Explore Flowers</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+        <div class="about-box">
+            <h1 style="text-align: center;">About</h1>
+            <h2>Every Flower Tells a Story</h2>
+            <p>At Bloomora, we believe flowers are more than beautiful petals — they are little expressions of love, joy, and care. Every bouquet is thoughtfully arranged to make your special moments unforgettable.</p>
+        </div>
+        <div class="about-img">
+            <div class="about-item">
+                <img src="about1.jpg">
+            </div>
+            <div class="about-item">
+                <img src="about2.jpg">
+            </div>
+            <div class="about-item">
+                <img src="about3.jpg">
+            </div>                        
+        </div>
+    </section>
+
+    <!-- image section -->
+    <section id="section4">
+        <h1 style="margin-left: 30px;margin-top: 50px; padding: 20px 10px; color: #b61a5b;">Our flower collections</h1>
+        
+        <div class="flower-img">
+            <div class="img-container">
+                <div class="img-box">
+                    <div class="images">
+                        <img src="image1.jpg">
+                    </div>
+                    <h3 class="flower-name">Pastel Love Bouquet</h3>
+                    <p class="flower-pra">Soft pastel roses for your sweetest moments.</p>
+                    <div class="main-cart">
+                        <p class="flower-price">₹1,899</p>
+                        <button class="add-cart">Add Cart</button>
+                    </div>                  
+                </div>
+                <div class="img-box">
+                    <div class="images">
+                        <img src="image2.jpg">
+                    </div>                   
+                    <h3 class="flower-name">Red Romance Bouquet</h3>
+                    <p class="flower-pra">Beautiful red roses for expressing true love.</p>
+                    <div class="main-cart">
+                        <p class="flower-price">₹1,499</p>
+                        <button class="add-cart">Add Cart</button>
+                    </div>                    
+                </div>
+                <div class="img-box">
+                    <div class="images">
+                        <img src="image3.jpg">
+                    </div>
+                    <h3 class="flower-name">Blue Garden Bliss</h3>
+                    <p class="flower-pra">Elegant blue and pink blooms for special occasions.</p>
+                    <div class="main-cart">
+                        <p class="flower-price">₹2,199</p>
+                        <button class="add-cart">Add Cart</button>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="img-container">    
+                <div class="img-box">
+                    <div class="images">
+                        <img src="image5.jpg">
+                    </div>                   
+                    <h3 class="flower-name">Sunshine Garden Bouquet</h3>
+                    <p class="flower-pra">Bright, colourful flowers to spread happiness.</p>
+                    <div class="main-cart">
+                        <p class="flower-price">₹1,699</p>
+                        <button class="add-cart">Add Cart</button>
+                    </div>                    
+                </div>
+                <div class="img-box">
+                    <div class="images">
+                        <img src="image6.jpg">
+                    </div>                   
+                    <h3 class="flower-name">Midnight Rose Bouquet</h3>
+                    <p class="flower-pra">Red and pink roses with a touch of elegance.</p>
+                    <div class="main-cart">
+                        <p class="flower-price">₹2,499</p>
+                        <button class="add-cart">Add Cart</button>
+                    </div>                    
+                </div>  
+                <div class="img-box">
+                    <div class="images">
+                        <img src="image4.jpg">
+                    </div>                   
+                    <h3 class="flower-name">Eternal Red Roses</h3>
+                    <p class="flower-pra">A luxurious bouquet for unforgettable memories.</p>
+                    <div class="main-cart">
+                        <p class="flower-price">₹2,999</p>
+                        <button class="add-cart">Add Cart</button>
+                    </div>                    
+                </div>                         
+
+            </div>  
+
+            <div class="img-container">
+                <div class="img-box">
+                    <div class="images">
+                        <img src="image7.jpg">
+                    </div>                    
+                    <h3 class="flower-name">Purple Elegance Basket</h3>
+                    <p class="flower-pra">Graceful purple blooms for thoughtful gifting.</p>
+                    <div class="main-cart">
+                        <p class="flower-price">₹1,899</p>
+                        <button class="add-cart">Add Cart</button>
+                    </div>                    
+                </div>  
+                <div class="img-box">
+                    <div class="images">
+                        <img src="image8.jpg">
+                    </div>                   
+                    <h3 class="flower-name">Golden Bloom Bouquet</h3>
+                    <p class="flower-pra">Bright sunflowers and roses to spread happiness.</p>
+                    <div class="main-cart">
+                        <p class="flower-price">₹1,399</p>
+                        <button class="add-cart">Add Cart</button>
+                    </div>                    
+                </div>                 
+            </div>                                                  
+        </div>
+    </section>
+
+    <!-- choose section -->
+    <section>
+                  
+        <div class="why-choose">     
+            <h1 style="text-align: center; margin-left: 30%; color: #92043b;">Why Choose Us</h1> 
+            <p style="text-align: center; margin-left: 30%; color: #8A5264;">We bring happiness through fresh flowers and thoughtful gifts.</p>         
+            <div class="container">
+                <div class="box">
+                    <h3>Fresh and handpicked flowers</h3>
+                    <p>Only the freshest blooms, carefully picked for you.</p>
+                </div>
+                <div class="box">
+                    <h3>Unique handcrafted bouquets</h3>
+                    <p>Beautiful arrangements made with creativity and care.</p>
+                </div>
+                <div class="box">
+                    <h3>Beautiful packaging for every occasion</h3> 
+                    <p>Elegant packaging to make your moments special.</p>
+                </div>
+                <div class="box">
+                    <h3>Thoughtful gifts made with love</h3>  
+                    <p>More than flowers, we deliver emotions.</p> 
+                </div>
+                <div class="box box1">
+                    <h3>Easy and convenient ordering</h3>
+                    <p>Simple, quick and hassle-free shopping experience.</p>
+                </div>            
+            </div>                                                                                      
+        </div>
+        
+    </section>
+
+    <!-- footer section -->
+    <footer id="section5">
+        <div class="footer">
+            <div class="footerAddress">
+                <p>BLOOMORA</p>
+                <p>Where every petal carries a feeling.</p> 
+                <i class="fa-brands fa-facebook"></i>
+                <a href="https://www.linkedin.com/in/divya-bharathi-597653406/"><i class="fa-brands fa-linkedin"></i></a>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="footer1">
+                <a href="#">Home</a>
+                <a href="#">Collections</a>
+                <a href="#">Abou</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>&copy;2026,BLOOMORA</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
